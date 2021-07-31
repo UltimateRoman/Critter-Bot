@@ -4,9 +4,10 @@ from jina import Document, DocumentArray
 from jina.types.document.generators import from_csv
 
 import csv
+from config import turl
 
 token = input("Enter telegram bot token:")
-url = "https://api.telegram.org/bot"+token
+url = turl+token
 da = DocumentArray()
 
 def get_message(offset):
