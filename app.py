@@ -1,10 +1,9 @@
-import time, requests, json, urllib
-from helper import make_msg,url
+import time, requests, json, urllib, csv
 from jina import Document, DocumentArray
 from jina.types.document.generators import from_csv
 
-import csv
 from config import turl
+from helper import handle_msg,url
 
 
 da = DocumentArray()
@@ -42,7 +41,7 @@ def main():
             respd = get_message(prev_id)
             if len(respd['result'])>0:
                 prev_id = get_last_id(respd)+1
-                make_msg(respd,da)
+                handle_msg(respd,da)
             time.sleep(1)
             
         except Exception as e:
