@@ -38,7 +38,7 @@ def random_dog(chat_id):
 
 def send_message(args,chat_id):
     if args[0] == 'Hi' or args[0] == '/start':
-        reply = "Hello, I'm Critter Bot! \n You can use help to get started 😃"
+        reply = "Hello, I'm Critter Bot! \nYou can use help to get started 😃"
     elif args[0] == "Thanks":
         reply = "Goodbye! See you soon 😁"
     elif args[0] == "help":
