@@ -4,6 +4,8 @@ A Telegram Bot exclusively for Cats and Dogs
 
 ![Logo](pics/logo.png?raw=true)
 
+## Examples
+
 <br/>
 
 ![pic1](pics/pic1.png?raw=true)
