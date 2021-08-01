@@ -1,0 +1,4 @@
+jina[http,transformers,standard,torch,hub]
+requests
+pandas
+numpy
